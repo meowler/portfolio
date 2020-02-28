@@ -1,0 +1,17 @@
+#site-header {
+	width: 100%;
+	background: transparent;
+	position: absolute;
+
+	.header-navigation-wrapper {
+		nav {
+			ul {
+				li {
+					a {
+						color: white;
+					}
+				}
+			}
+		}
+	}
+}

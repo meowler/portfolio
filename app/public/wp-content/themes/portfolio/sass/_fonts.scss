@@ -1,0 +1,27 @@
+@import url('https://use.typekit.net/ezs2erb.css');
+
+$base-font: futura-pt, sans-serif;
+$header-font: acumin-pro-condensed, sans-serif;
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-family: $header-font;
+	text-transform: uppercase;
+	font-weight: 700;
+	color: $text-color;
+	letter-spacing: 1px;
+
+	&.subtitle {
+		font-weight: 300;
+	}
+}
+
+p,
+li,
+a {
+	font-family: $base-font;
+}

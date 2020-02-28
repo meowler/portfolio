@@ -1,3 +1,9 @@
 [27-Feb-2020 14:04:37 UTC] PHP Parse error:  syntax error, unexpected ';' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 13
 [27-Feb-2020 16:46:32 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 23
 [27-Feb-2020 16:46:48 UTC] PHP Parse error:  syntax error, unexpected 'endif' (T_ENDIF), expecting end of file in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 23
+[28-Feb-2020 02:44:23 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/functions.php on line 26
+[28-Feb-2020 02:44:25 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/functions.php on line 26
+[28-Feb-2020 02:44:38 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/functions.php on line 26
+[28-Feb-2020 02:44:49 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/functions.php on line 26
+[28-Feb-2020 02:44:49 UTC] PHP Parse error:  syntax error, unexpected '{', expecting ')' in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/functions.php on line 26
+[28-Feb-2020 02:59:43 UTC] PHP Parse error:  syntax error, unexpected '}', expecting end of file in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 80

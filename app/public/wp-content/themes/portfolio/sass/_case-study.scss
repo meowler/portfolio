@@ -8,12 +8,31 @@ main {
 			}
 		}
 
-		.intro {
+		.banner {
 			width: 100%;
 			height: 55vh;
 			background-repeat: no-repeat !important;
 			background-size: cover !important;
 			position: absolute;
+		}
+
+		.intro-container {
+			position: relative;
+
+			.content-wrapper {
+				width: 100%;
+				margin: 0 auto;
+			}
+
+			.entry-title {
+				color: white;
+				padding: 3% 0 6%;
+			}
+
+			.post-content {
+				background: white;
+				padding: 2.5% 10%;
+			}
 		}
 
 		.lt-container {

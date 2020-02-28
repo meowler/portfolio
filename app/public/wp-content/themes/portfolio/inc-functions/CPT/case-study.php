@@ -61,7 +61,7 @@ function cptui_register_my_cpts_case_study() {
 		"rewrite" => [ "slug" => "case_study", "with_front" => true ],
 		"query_var" => true,
 		"menu_icon" => "dashicons-art",
-		"supports" => [ "title", "editor", "thumbnail", "custom-fields", "page-attributes", "post-formats" ],
+		"supports" => [ "title", "editor", "thumbnail", "custom-fields", "page-attributes", "post-formats", "revisions" ],
 	];
 
 	register_post_type( "case_study", $args );

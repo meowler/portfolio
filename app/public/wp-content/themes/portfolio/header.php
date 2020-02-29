@@ -29,7 +29,7 @@
 
 		<header id="site-header" class="header-footer-group" role="banner">
 
-			<div class="header-inner lt-container">
+			<div class="header-inner">
 
 				<div class="header-titles-wrapper">
 

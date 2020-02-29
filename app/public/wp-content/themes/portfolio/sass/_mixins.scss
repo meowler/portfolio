@@ -78,5 +78,7 @@
 
 	@include xxl-desktop {
 		min-width: $xxl-desktop;
+		padding-left: 18rem;
+		padding-right: 18rem;
 	}
 }

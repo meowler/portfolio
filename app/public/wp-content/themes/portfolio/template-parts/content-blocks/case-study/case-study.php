@@ -6,42 +6,12 @@
 
 <div class="banner" style="background:url(<?php the_post_thumbnail_url(); ?>;"></div>
 		
-		<section class="intro-container lt-container">
+		<section class="intro-container">
 			<div class="content-wrapper">
 				<header class="entry-header has-text-align-center<?php echo esc_attr( $entry_header_classes ); ?>">
 					<?php the_title( '<h1 class="entry-title">', '</h1>' ); ?>
 				</header><!-- .entry-header -->
-				<div class="post-content">
-					<?php echo the_field('intro'); ?>
-
-					<?php
-					$GroupOrPostSlug = 'cs_intro';
-					//or insert the ID of your fields Group.
-					$groupID='';
-
-
-
-					global $wpdb;
-					if (empty($groupID))
-					{$groupID = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_name =  '$GroupOrPostSlug' ");}
-					if (empty($groupID))
-					{$groupID = $wpdb->get_var("SELECT ID FROM $wpdb->posts WHERE post_title =  '$GroupOrPostSlug' ");}
-
-					$custom_field_keys = get_post_custom_keys($groupID);
-					foreach ( $custom_field_keys as $key => $fieldkey )
-					{
-						if (stristr($fieldkey,'field_'))
-						{
-							//echo $key . " => " . $fieldkey . "<br />";
-							//echo $field['label'] . ': ' . $field['value'];
-							//echo $fieldkey . "<br />";
-							$field = get_field_object($fieldkey, $groupID);
-							echo $field['label'];
-
-						}
-					}
-					?>
-				</div>
+				 
 			</div>
 		</section>
 		

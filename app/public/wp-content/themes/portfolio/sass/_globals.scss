@@ -31,14 +31,18 @@ body {
 	}
 }
 
-.lt-container {
+section,
+.lt-container,
+.header-inner,
+.alignwide {
 	@include lt-container;
 	max-width: 200rem;
 }
 
-//this is container inside a wrapper that has a background color
-//that wrapper is full width
-//this container has content inside
+section {
+	padding-top: 150px;
+	padding-bottom: 105px;
+}
 
 .full-width-container {
 	width: 100;

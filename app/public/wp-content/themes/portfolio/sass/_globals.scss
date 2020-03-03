@@ -13,8 +13,7 @@ body {
 }
 
 /* Block: Shared Nesting Alignment Resets ---- */
-.wp-block-group,
-[class*='__inner-container'] {
+.wp-block-group {
 	.wp-block-group,
 	.wp-block-cover {
 		&:not(.alignfull):not(.alignwide):not(.alignleft):not(.alignright) {
@@ -44,7 +43,10 @@ section {
 	padding-bottom: 105px;
 }
 
-.full-width-container {
-	width: 100;
-	background: #eee;
+.post-content {
+	> .alignfull.has-background {
+		padding: 18rem 4rem 10.5rem;
+		margin-top: -11rem;
+		z-index: -9;
+	}
 }

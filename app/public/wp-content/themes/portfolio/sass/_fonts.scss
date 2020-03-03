@@ -9,25 +9,49 @@ h3,
 h4,
 h5,
 h6,
-.heading {
+.heading,
+.subheading {
 	font-family: $header-font;
 	text-transform: uppercase;
-	font-weight: 700;
 	color: $text-color;
 	letter-spacing: 1px;
+}
 
-	&.subtitle {
-		font-weight: 300;
-	}
+.heading {
+	font-weight: 700;
+}
+
+.subheading {
+	font-weight: 300;
 }
 
 p,
 li,
-a {
+a,
+span {
+	color: $text-color;
 	font-family: $base-font;
 }
 
 p {
 	padding-bottom: 1rem;
 	margin: 0;
+}
+
+ul {
+	list-style-type: none;
+	margin: 0;
+
+	li {
+		margin: 0;
+	}
+}
+
+ul.bullets {
+	margin: 0 0 3rem 3rem;
+	list-style-type: disc;
+
+	li {
+		margin: 0.5rem 0 0 2rem;
+	}
 }

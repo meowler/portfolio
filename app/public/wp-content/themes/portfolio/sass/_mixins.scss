@@ -28,6 +28,12 @@
 	}
 }
 
+@mixin lg-tablet {
+	@media (min-width: $lg-tablet) {
+		@content;
+	}
+}
+
 @mixin tablet {
 	@media (min-width: $tablet) {
 		@content;

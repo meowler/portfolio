@@ -15,9 +15,13 @@
 			</div>
 		</section>
 		
-		<div class="content-wrapper">
-			<div class="post-content">
 
+		<div class="content-wrapper">
+			<?php
+				$thetitle = get_the_title();
+				$url = sanitize_title( $thetitle );
+			?>	
+			<div class="post-content <?php echo $url; ?>">
 				<?php
 				if ( is_search() || ! is_singular() && 'summary' === get_theme_mod( 'blog_content', 'full' ) ) {
 					the_excerpt();
@@ -28,10 +32,8 @@
 
 			</div><!-- .entry-content -->
 		</div><!-- .content-wrapper -->
-		<div class="lt-container">	
-		</div>
-		
 
+	
 	<div class="section-inner">
 		<?php
 		wp_link_pages(

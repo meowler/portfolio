@@ -22,9 +22,9 @@ if( $intro ): ?>
                 $intro_title = get_sub_field('project_intro_heading');
                 $project_description = get_sub_field('project_description');    
         ?>
-        <h2><?php echo $intro_title; ?></h2>
+        <h2 class="header"><?php echo $intro_title; ?></h2>
         <div class="highlights-container">
-            <div class="description"><?php echo $project_description; ?></div>
+            <div class="description intro-section"><?php echo $project_description; ?></div>
             <div class="highlights">
                 <div class="client">
                     <?php if( have_rows('project_highlights_type') ): //child group field

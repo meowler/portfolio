@@ -231,3 +231,23 @@
 [29-Feb-2020 16:11:57 UTC] PHP  21. WP_Hook->apply_filters() /Users/lt/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:312
 [29-Feb-2020 16:11:57 UTC] PHP  22. wp_ob_end_flush_all() /Users/lt/Local Sites/portfolio/app/public/wp-includes/class-wp-hook.php:288
 [29-Feb-2020 16:11:57 UTC] PHP  23. ob_end_flush() /Users/lt/Local Sites/portfolio/app/public/wp-includes/functions.php:4552
+[03-Mar-2020 02:13:46 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 21
+[03-Mar-2020 02:13:46 UTC] PHP Stack trace:
+[03-Mar-2020 02:13:46 UTC] PHP   1. {main}() /Users/lt/Local Sites/portfolio/app/public/index.php:0
+[03-Mar-2020 02:13:46 UTC] PHP   2. require() /Users/lt/Local Sites/portfolio/app/public/index.php:17
+[03-Mar-2020 02:13:46 UTC] PHP   3. require_once() /Users/lt/Local Sites/portfolio/app/public/wp-blog-header.php:19
+[03-Mar-2020 02:13:46 UTC] PHP   4. include() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template-loader.php:98
+[03-Mar-2020 02:13:46 UTC] PHP   5. get_template_part() /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/single-case_study.php:24
+[03-Mar-2020 02:13:46 UTC] PHP   6. locate_template() /Users/lt/Local Sites/portfolio/app/public/wp-includes/general-template.php:168
+[03-Mar-2020 02:13:46 UTC] PHP   7. load_template() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template.php:671
+[03-Mar-2020 02:13:46 UTC] PHP   8. require() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template.php:724
+[03-Mar-2020 02:13:58 UTC] PHP Warning:  Invalid argument supplied for foreach() in /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/template-parts/content-blocks/case-study/case-study.php on line 21
+[03-Mar-2020 02:13:58 UTC] PHP Stack trace:
+[03-Mar-2020 02:13:58 UTC] PHP   1. {main}() /Users/lt/Local Sites/portfolio/app/public/index.php:0
+[03-Mar-2020 02:13:58 UTC] PHP   2. require() /Users/lt/Local Sites/portfolio/app/public/index.php:17
+[03-Mar-2020 02:13:58 UTC] PHP   3. require_once() /Users/lt/Local Sites/portfolio/app/public/wp-blog-header.php:19
+[03-Mar-2020 02:13:58 UTC] PHP   4. include() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template-loader.php:98
+[03-Mar-2020 02:13:58 UTC] PHP   5. get_template_part() /Users/lt/Local Sites/portfolio/app/public/wp-content/themes/portfolio/single-case_study.php:24
+[03-Mar-2020 02:13:58 UTC] PHP   6. locate_template() /Users/lt/Local Sites/portfolio/app/public/wp-includes/general-template.php:168
+[03-Mar-2020 02:13:58 UTC] PHP   7. load_template() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template.php:671
+[03-Mar-2020 02:13:58 UTC] PHP   8. require() /Users/lt/Local Sites/portfolio/app/public/wp-includes/template.php:724

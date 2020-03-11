@@ -34,11 +34,6 @@ span {
 	font-family: $base-font;
 }
 
-p {
-	padding-bottom: 1rem;
-	margin: 0;
-}
-
 ul {
 	list-style-type: none;
 	margin: 0;
@@ -62,10 +57,5 @@ ul.bullets {
 		font-size: 2.2rem;
 		text-transform: none;
 		letter-spacing: 0;
-		padding-bottom: 1.3rem;
-
-		&:last-of-type {
-			padding-bottom: 0;
-		}
 	}
 }

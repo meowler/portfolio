@@ -16,6 +16,7 @@ main {
 				position: absolute;
 			}
 
+			// <introduction>
 			.intro-container {
 				position: relative;
 
@@ -34,8 +35,16 @@ main {
 				margin: 0;
 			}
 
+			.wp-block-group.intro {
+				padding-bottom: 0rem;
+
+				.wp-block-group {
+					padding-top: 7rem;
+				}
+			}
+
 			[id*='project-intro-block'] {
-				padding: 2% 7%;
+				padding: 2% 0 0 9%;
 
 				.highlights-container {
 					display: flex;
@@ -116,89 +125,75 @@ main {
 					}
 				}
 			}
+			// </ introduction>
 
-			.wp-block-group.center-columns {
-				[class*='__inner-container'] {
-					> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
-						max-width: 100%;
+			// <deliverables>
+			.wp-block-group {
+				.wp-block-group.alignwide.center-columns {
+					[class*='__inner-container'] {
+						> div:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide),
+						.wp-block-columns {
+							max-width: 100rem !important;
+							margin: 0 auto;
+						}
+
+						h2.has-text-align-center.subheader {
+							padding: 0px 0 4rem;
+							margin: 0;
+						}
+					}
+
+					h5 {
+						display: flex;
+						flex-direction: column;
+						margin-bottom: 0;
+
+						@include md-desktop {
+							margin-bottom: 1.2rem;
+						}
+
+						&:after {
+							content: ' ';
+							width: 15%;
+							height: 3px;
+							background: $primary-color;
+							margin: 1rem auto 0;
+						}
+					}
+
+					ul {
+						font-size: 2.2rem;
+						padding: 0.5rem 0 0;
 					}
 
 					.wp-block-columns {
+						text-align: center;
+						justify-content: center;
+						padding-top: 2rem;
+
 						.wp-block-column {
-							@include md-desktop {
-								flex-basis: calc(100% * 1 / 3 - 7rem);
-							}
-						}
-					}
-				}
+							margin-bottom: 5rem;
+							flex-grow: 0;
+							padding: 0 1rem;
 
-				.wp-block-columns {
-					text-align: center;
-					justify-content: center;
-					padding-top: 2rem;
-
-					&:not(.alignwide):not(.alignfull) {
-						margin-top: 0;
-						margin-bottom: 0;
-					}
-
-					// @include md-desktop {
-					// 	text-align: left;
-					// }
-
-					.wp-block-column {
-						margin-bottom: 5rem;
-						flex-grow: 0;
-						padding: 0 1rem;
-
-						// @include md-desktop {
-						// 	flex-basis: calc(100% * 1 / 3 - 7rem);
-						// }
-
-						&:not(:first-child) {
-							margin-left: 0;
-						}
-
-						&:last-of-type {
-							margin-bottom: 0;
-						}
-
-						h5 {
-							display: flex;
-							flex-direction: column;
-							margin-bottom: 0;
-
-							@include md-desktop {
-								margin-bottom: 1.2rem;
+							&:not(:first-child) {
+								margin-left: 0;
 							}
 
-							&:after {
-								content: ' ';
-								width: 15%;
-								height: 3px;
-								background: $primary-color;
-								margin: 1rem auto 0;
-
-								// @include md-desktop {
-								// 	margin: 1rem 0 0;
-								// }
+							&:last-of-type {
+								margin-bottom: 0;
 							}
-						}
 
-						ul {
-							font-size: 2.2rem;
-							padding: 0.5rem 0 0;
+							@include tablet {
+								margin-bottom: 0rem;
+							}
 						}
 					}
 				}
 			}
+			// </deliverables>
 
-			.wp-block-group.alignwide {
-				&.has-background {
-					padding-top: 13rem;
-					padding-bottom: 6rem;
-				}
-
+			.wp-block-group {
 				[class*='__inner-container'] {
 					> *:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
 						max-width: 100%;
@@ -207,32 +202,28 @@ main {
 
 				figure {
 					&.wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
-						margin-top: 8rem;
-					}
+						margin-top: 10rem;
 
-					&.before {
-						display: flex;
+						&.before {
+							display: flex;
+							flex-direction: column;
 
-						&:before {
-							content: 'before';
-							@extend .header;
-							font-weight: 700;
-							font-size: 1.3rem;
-							padding-top: 0.5rem;
+							@include tablet {
+								flex-direction: row;
+							}
+
+							&:before {
+								content: 'before';
+								@extend .header;
+								font-weight: 700;
+								font-size: 1.3rem;
+								padding-top: 0.5rem;
+								padding-left: 1.5rem;
+							}
 						}
 					}
 				}
 			}
-
-			.intro-section {
-				.wp-block-group {
-				}
-			}
 		}
 	}
-}
-
-.sticky {
-	position: sticky;
-	top: 0;
 }

@@ -21,9 +21,19 @@ h2.heading {
 	font-weight: 700;
 }
 
-.subheader {
-	font-weight: 300;
-	font-size: 4.8rem;
+h5 {
+	font-size: 2.1rem;
+}
+
+.subheader,
+.wp-block-group {
+	> :not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.is-style-wide) {
+		.subheader {
+			padding-bottom: 4rem;
+			font-weight: 300;
+			font-size: 4.8rem;
+		}
+	}
 }
 
 p,

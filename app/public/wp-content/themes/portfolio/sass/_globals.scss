@@ -51,6 +51,15 @@ body {
 				&:last-of-type {
 					padding-bottom: 0;
 				}
+
+				&.comment {
+					text-align: center;
+					font-style: italic;
+					font-weight: 500;
+					padding-top: 1rem;
+					padding-bottom: 5.5rem;
+					font-size: 2.5rem;
+				}
 			}
 		}
 	}
@@ -89,6 +98,11 @@ section {
 		padding-bottom: 10.5rem;
 		margin-top: -11rem;
 		z-index: -9;
+
+		&.long-overlap {
+			padding-top: 79.8rem;
+			margin-top: -82rem;
+		}
 	}
 
 	> .wp-block-group {
@@ -115,4 +129,10 @@ section {
 .sticky {
 	position: sticky;
 	top: 105px;
+}
+
+.shadow {
+	img {
+		@include shadow;
+	}
 }

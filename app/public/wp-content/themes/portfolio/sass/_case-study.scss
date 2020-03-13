@@ -203,8 +203,10 @@ main {
 				figure {
 					&.wp-block-image:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
 						margin-top: 10rem;
+						margin-bottom: 0rem;
 
-						&.before {
+						&.before,
+						&.after {
 							display: flex;
 							flex-direction: column;
 
@@ -212,13 +214,47 @@ main {
 								flex-direction: row;
 							}
 
-							&:before {
-								content: 'before';
+							&:before,
+							&:after {
 								@extend .header;
 								font-weight: 700;
 								font-size: 1.3rem;
 								padding-top: 0.5rem;
+							}
+						}
+
+						&.before {
+							&:before {
+								content: 'before';
 								padding-left: 1.5rem;
+							}
+						}
+
+						&.after {
+							&:after {
+								content: 'after';
+								padding-right: 1.5rem;
+							}
+						}
+					}
+				}
+
+				.cards {
+					.wp-block-column {
+						text-align: left;
+						background: white;
+						padding: 1.05rem;
+						border-radius: 1rem;
+						max-width: 370px;
+						display: table;
+						@include shadow;
+
+						figure {
+							&.wp-block-image {
+								&:not(.alignwide):not(.alignfull):not(.alignleft):not(.alignright):not(.aligncenter) {
+									margin-top: 1rem;
+									margin-bottom: 0rem;
+								}
 							}
 						}
 					}
